@@ -38,7 +38,7 @@
 class windows-role_base (
   $pkglist_hash = ['vim',
                    '7zip',
-                   'curl'
+                   'curl',
                    'GoogleChrome'],
   ){
 
