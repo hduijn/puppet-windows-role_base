@@ -36,16 +36,16 @@
 # Copyright 2014 Your name here, unless otherwise noted.
 #
 class windows-role_base (
-  $pkglist_hash = ['vim',
-                   '7zip',
-                   'curl',
-                   'GoogleChrome'],
+  $pkglist_array = ['vim',
+                    '7zip',
+                    'curl',
+                    'GoogleChrome'],
   ){
 
 
 
 # Install packages
   class {'windows-base::packages':
-    pkglist => $pkglist_hash,
+    pkglist => $pkglist_array,
   }
 }
