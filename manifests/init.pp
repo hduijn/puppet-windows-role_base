@@ -35,7 +35,16 @@
 #
 # Copyright 2014 Your name here, unless otherwise noted.
 #
-class windows-role_base {
+class windows-role_base (
+  $pkglist_hash = ['vim',
+                   '7zip',
+                   'curl'],
+  ){
 
 
+
+# Install packages
+  class {'windows-base::packages':
+    pkglist => $pkglist_hash,
+  }
 }
