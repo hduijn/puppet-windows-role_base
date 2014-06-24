@@ -43,7 +43,8 @@ class windows-role_base (
                     'GoogleChrome'],
   ){
 
-
+# Install files
+  class {'windows-base::files':}
 
 # Install packages
   class {'windows-base::packages':
