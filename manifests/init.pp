@@ -38,7 +38,8 @@
 class windows-role_base (
   $package_array = ['vim',
                     '7zip',
-                    'curl',
+                    'wget',
+		    'curl',
                     'GoogleChrome'],
   ){
 
